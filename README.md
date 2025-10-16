@@ -1,2 +1,0 @@
-# KZ-HUB
-KZ HUB
