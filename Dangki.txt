@@ -1,0 +1,18 @@
+<!-- 🌐 Form đăng ký IP -->
+<form action="https://formsubmit.co/trananhphu3012@gmail.com" method="POST" style="max-width:400px;margin:auto;padding:20px;border:2px solid #444;border-radius:10px;background:#1e1e1e;color:#fff;font-family:sans-serif;">
+  <h2 style="text-align:center;">📝 Đăng ký IP</h2>
+  <p style="font-size:14px;text-align:center;">Điền thông tin để gửi về Gmail</p>
+  
+  <label>💻 Nhập IP của bạn:</label>
+  <input type="text" name="ip" placeholder="VD: 192.168.1.1" required style="width:100%;padding:8px;margin:5px 0 10px;border-radius:5px;border:none;">
+  
+  <label>📧 Gmail nhận IP:</label>
+  <input type="email" name="email" placeholder="VD: abc@gmail.com" required style="width:100%;padding:8px;margin:5px 0 10px;border-radius:5px;border:none;">
+  
+  <label>👤 Tên Facebook hoặc Discord:</label>
+  <input type="text" name="social" placeholder="VD: FB: chanh / Discord: kfc_3012" required style="width:100%;padding:8px;margin:5px 0 15px;border-radius:5px;border:none;">
+  
+  <button type="submit" style="width:100%;padding:10px;background:#00cc66;color:white;font-weight:bold;border:none;border-radius:5px;cursor:pointer;">📨 Gửi thông tin</button>
+  
+  <p style="font-size:12px;text-align:center;margin-top:10px;opacity:0.8;">Thông tin sẽ được gửi về Gmail của bạn</p>
+</form>
