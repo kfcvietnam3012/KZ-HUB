@@ -1,252 +1,60 @@
-<!-- KZ HUB Update Notice (Vietnamese + English) -->
-<style>
-  :root{
-    --kzh-bg: #0f1724;
-    --kzh-accent: #e11d48;
-    --kzh-card: #0b1220;
-    --kzh-text: #e6eef8;
-    --kzh-muted: #9fb0c8;
-    --kzh-radius: 12px;
-    --kzh-max-width: 920px;
-    --kzh-font: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  }
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KZ HUB - Cập nhật tuần tới</title>
+  <style>
+    body { background-color: #111; color: #fff; font-family: Arial; text-align: center; }
+    h1 { color: #ff4747; }
+    table { margin: 20px auto; border-collapse: collapse; width: 80%; }
+    th, td { border: 1px solid #555; padding: 10px; }
+    th { background-color: #222; color: #00ff88; }
+  </style>
+</head>
+<body>
+  <h1>🎉 KZ HUB - Cập nhật tuần tới 🎉</h1>
 
-  .kzh-notice {
-    max-width: var(--kzh-max-width);
-    margin: 18px auto;
-    background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
-    border: 1px solid rgba(255,255,255,0.04);
-    border-radius: var(--kzh-radius);
-    color: var(--kzh-text);
-    font-family: var(--kzh-font);
-    box-shadow: 0 8px 30px rgba(2,6,23,0.6);
-    overflow: hidden;
-  }
+  <h2>🇻🇳 Tiếng Việt</h2>
+  <table>
+    <tr><th>Chức năng</th></tr>
+    <tr><td>Kill aura 1 hit (distance)</td></tr>
+    <tr><td>Auto farm</td></tr>
+    <tr><td>Super lag</td></tr>
+    <tr><td>Crack game</td></tr>
+    <tr><td>God mode</td></tr>
+    <tr><td>Creator mode</td></tr>
+    <tr><td>Hitbox distance</td></tr>
+    <tr><td>Spam wall combo</td></tr>
+    <tr><td>Longer ultimate</td></tr>
+    <tr><td>Auto block</td></tr>
+    <tr><td>Anti lag</td></tr>
+    <tr><td>Anti god mode</td></tr>
+    <tr><td>Anti counter</td></tr>
+    <tr><td>Invisible</td></tr>
+    <tr><td>Auto combo</td></tr>
+  </table>
 
-  .kzh-header {
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:12px;
-    padding:16px 18px;
-    background: linear-gradient(90deg, rgba(225,29,72,0.08), rgba(14,165,233,0.02));
-  }
+  <h2>🇺🇸 English</h2>
+  <table>
+    <tr><th>Features</th></tr>
+    <tr><td>Kill aura 1 hit (distance)</td></tr>
+    <tr><td>Auto farm</td></tr>
+    <tr><td>Super lag</td></tr>
+    <tr><td>Crack game</td></tr>
+    <tr><td>God mode</td></tr>
+    <tr><td>Creator mode</td></tr>
+    <tr><td>Hitbox distance</td></tr>
+    <tr><td>Spam wall combo</td></tr>
+    <tr><td>Longer ultimate</td></tr>
+    <tr><td>Auto block</td></tr>
+    <tr><td>Anti lag</td></tr>
+    <tr><td>Anti god mode</td></tr>
+    <tr><td>Anti counter</td></tr>
+    <tr><td>Invisible</td></tr>
+    <tr><td>Auto combo</td></tr>
+  </table>
 
-  .kzh-brand {
-    display:flex;
-    align-items:center;
-    gap:12px;
-  }
-
-  .kzh-logo {
-    width:46px;
-    height:46px;
-    border-radius:8px;
-    background:linear-gradient(135deg,var(--kzh-accent), #0ea5e9);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-weight:700;
-    color:white;
-    font-size:18px;
-    box-shadow:0 4px 12px rgba(14,165,233,0.06);
-  }
-
-  .kzh-title {
-    line-height:1;
-  }
-  .kzh-title h3 { margin:0; font-size:16px; }
-  .kzh-title p { margin:0; font-size:12px; color:var(--kzh-muted); }
-
-  .kzh-controls {
-    display:flex;
-    gap:8px;
-    align-items:center;
-  }
-
-  .kzh-tabs {
-    display:flex;
-    border-radius:999px;
-    overflow:hidden;
-    border:1px solid rgba(255,255,255,0.04);
-  }
-
-  .kzh-tab {
-    padding:6px 12px;
-    cursor:pointer;
-    font-size:13px;
-    background:transparent;
-    color:var(--kzh-text);
-    border: none;
-  }
-
-  .kzh-tab.active {
-    background:linear-gradient(90deg,var(--kzh-accent), #0ea5e9);
-    color:#fff;
-  }
-
-  .kzh-close {
-    background:transparent;
-    color:var(--kzh-muted);
-    border:none;
-    font-size:14px;
-    cursor:pointer;
-    padding:6px;
-  }
-
-  .kzh-body {
-    display:flex;
-    gap:18px;
-    padding:18px;
-    flex-wrap:wrap;
-  }
-
-  .kzh-panel {
-    flex:1 1 420px;
-    min-width:260px;
-    background:var(--kzh-card);
-    border-radius:10px;
-    padding:14px;
-    border:1px solid rgba(255,255,255,0.02);
-  }
-
-  .kzh-panel h4 { margin:0 0 8px 0; font-size:14px; }
-  .kzh-panel p.desc { margin:0 0 12px 0; color:var(--kzh-muted); font-size:13px; }
-
-  .kzh-table {
-    width:100%;
-    border-collapse:collapse;
-  }
-  .kzh-table th, .kzh-table td {
-    text-align:left;
-    padding:8px 10px;
-    border-bottom:1px dashed rgba(255,255,255,0.03);
-    font-size:13px;
-  }
-  .kzh-table th {
-    font-size:12px;
-    color:var(--kzh-muted);
-    width:38%;
-  }
-
-  /* small screens */
-  @media (max-width:720px){
-    .kzh-body { padding:12px; gap:12px; }
-    .kzh-header { padding:12px; }
-  }
-</style>
-
-<div class="kzh-notice" id="kzh-notice">
-  <div class="kzh-header" role="region" aria-label="KZ HUB update notice">
-    <div class="kzh-brand">
-      <div class="kzh-logo" aria-hidden="true">KZ</div>
-      <div class="kzh-title">
-        <h3>KZ HUB — Upcoming Updates</h3>
-        <p id="kzh-sub" class="kzh-sub">These features will be updated next week · Các chức năng sẽ cập nhật cho tuần sau</p>
-      </div>
-    </div>
-
-    <div class="kzh-controls">
-      <div class="kzh-tabs" role="tablist" aria-label="Language tabs">
-        <button class="kzh-tab active" data-lang="vi" role="tab" aria-selected="true">Tiếng Việt</button>
-        <button class="kzh-tab" data-lang="en" role="tab" aria-selected="false">English</button>
-      </div>
-      <button class="kzh-close" aria-label="Close notice" title="Close" onclick="document.getElementById('kzh-notice').style.display='none'">✕</button>
-    </div>
-  </div>
-
-  <div class="kzh-body">
-    <!-- Vietnamese panel -->
-    <div class="kzh-panel" id="panel-vi" data-langpanel="vi" role="tabpanel">
-      <h4>Thông báo cập nhật — Tiếng Việt</h4>
-      <p class="desc">Đây là những chức năng sẽ được cập nhật cho tuần sau. Bao gồm chức năng mới và sửa một số chức năng cũ.</p>
-      <table class="kzh-table" aria-describedby="panel-vi">
-        <thead>
-          <tr><th>Chức năng</th><th>Mô tả tóm tắt</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Kill aura 1 hit (distance)</td><td>Tấn công nhanh 1 hit theo khoảng cách</td></tr>
-          <tr><td>Auto farm</td><td>Tự động farm / kiếm tài nguyên</td></tr>
-          <tr><td>Super lag</td><td>Tạo lag chiến thuật (tối ưu hoá)</td></tr>
-          <tr><td>Crack game</td><td>Công cụ crack (nâng cấp nội bộ)</td></tr>
-          <tr><td>God mode</td><td>Chế độ bất tử</td></tr>
-          <tr><td>Creator mode</td><td>Chế độ cho người tạo nội dung</td></tr>
-          <tr><td>Hitbox distance</td><td>Mở rộng khoảng cách hitbox</td></tr>
-          <tr><td>Spam wall combo</td><td>Spam combo trên tường</td></tr>
-          <tr><td>Longer ultimate</td><td>Kéo dài thời gian ultimate</td></tr>
-          <tr><td>Auto block</td><td>Tự động block đòn</td></tr>
-          <tr><td>Anti lag</td><td>Giảm lag; tối ưu hoá</td></tr>
-          <tr><td>Anti god mode</td><td>Phòng tránh các hiệu ứng god mode từ đối phương</td></tr>
-          <tr><td>Anti counter</td><td>Giảm tác dụng counter của đối phương</td></tr>
-          <tr><td>Invisible</td><td>Chế độ tàng hình</td></tr>
-          <tr><td>Auto combo</td><td>Tự động ghép combo</td></tr>
-        </tbody>
-      </table>
-    </div>
-
-    <!-- English panel -->
-    <div class="kzh-panel" id="panel-en" data-langpanel="en" role="tabpanel" style="display:none;">
-      <h4>Update Notice — English</h4>
-      <p class="desc">These are the features scheduled for next week's update. New features and fixes for some existing features.</p>
-      <table class="kzh-table" aria-describedby="panel-en">
-        <thead>
-          <tr><th>Feature</th><th>Short description</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Kill aura 1 hit (distance)</td><td>One-hit kill aura with distance control</td></tr>
-          <tr><td>Auto farm</td><td>Automated farming/resource collection</td></tr>
-          <tr><td>Super lag</td><td>Strategic induced lag (optimized)</td></tr>
-          <tr><td>Crack game</td><td>Game cracking tools (internal upgrade)</td></tr>
-          <tr><td>God mode</td><td>Invulnerability mode</td></tr>
-          <tr><td>Creator mode</td><td>Mode for content creators</td></tr>
-          <tr><td>Hitbox distance</td><td>Extended hitbox distance</td></tr>
-          <tr><td>Spam wall combo</td><td>Wall spam combo routine</td></tr>
-          <tr><td>Longer ultimate</td><td>Extended ultimate duration</td></tr>
-          <tr><td>Auto block</td><td>Automatic blocking</td></tr>
-          <tr><td>Anti lag</td><td>Lag mitigation / optimization</td></tr>
-          <tr><td>Anti god mode</td><td>Protection against enemy god modes</td></tr>
-          <tr><td>Anti counter</td><td>Reduce opponents' counter effects</td></tr>
-          <tr><td>Invisible</td><td>Stealth / invisible mode</td></tr>
-          <tr><td>Auto combo</td><td>Automatic combo chaining</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</div>
-
-<script>
-  (function(){
-    const tabs = document.querySelectorAll('.kzh-tab');
-    const panels = document.querySelectorAll('[data-langpanel]');
-
-    function setActive(lang){
-      tabs.forEach(t=>{
-        const is = t.getAttribute('data-lang') === lang;
-        t.classList.toggle('active', is);
-        t.setAttribute('aria-selected', is? 'true' : 'false');
-      });
-      panels.forEach(p=>{
-        p.style.display = p.getAttribute('data-langpanel') === lang ? '' : 'none';
-      });
-      // update subtitle
-      const sub = document.getElementById('kzh-sub');
-      if(lang === 'vi') sub.textContent = 'Đây là những chức năng sẽ được cập nhật cho tuần sau · Các chức năng mới và sửa một số chức năng cũ';
-      else sub.textContent = 'These features will be updated next week. New features and fixes for some existing features.';
-    }
-
-    tabs.forEach(t => t.addEventListener('click', ()=> setActive(t.getAttribute('data-lang'))));
-
-    // Optional: remember preference in session
-    const saved = sessionStorage.getItem('kzh-lang');
-    if(saved) setActive(saved);
-    tabs.forEach(t => t.addEventListener('click', ()=> sessionStorage.setItem('kzh-lang', t.getAttribute('data-lang'))));
-
-    // Accessibility: close via Escape
-    document.addEventListener('keydown', e => {
-      if(e.key === 'Escape'){
-        const el = document.getElementById('kzh-notice');
-        if(el) el.style.display = 'none';
-      }
-    });
-  })();
-</script>
+  <p>🔥 KZ HUB sẽ ra mắt bản cập nhật mới vào tuần tới!</p>
+</body>
+</html>
